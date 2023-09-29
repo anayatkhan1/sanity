@@ -19,6 +19,12 @@ export default defineType({
             options: { source: 'title', maxLength: 96, }
         }),
         defineField({
+            name: 'author',
+            title: 'Author',
+            type: 'reference',
+            to: {type: 'author'},
+          }),
+        defineField({
             name: 'body',
             title: 'Body',
             type: 'blockContent',
