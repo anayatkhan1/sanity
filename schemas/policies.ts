@@ -12,7 +12,16 @@ const policy = {
         },
         {
             name: 'slug',
-            title: 'Slug'
+            title: 'Slug',
+            type: 'slug',
+            options: { source: 'title', maxLength: 96, }
+        },
+        {
+            name: 'body',
+            title: 'Body',
+            type: 'blockContent',
         }
     ]
 }
+
+export default policy;
