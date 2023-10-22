@@ -6,8 +6,8 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'headline',
-      title: 'Headline',
+      name: 'title',
+      title: 'Title',
       type: 'string',
     }),
     defineField({
@@ -15,7 +15,7 @@ export default defineType({
       title: 'Slug',
       type: 'slug',
       options: {
-        source: 'headline',
+        source: 'title',
         maxLength: 96,
       },
     }),

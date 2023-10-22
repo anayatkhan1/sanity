@@ -2,8 +2,8 @@ import {defineField, defineType} from 'sanity'
 
 export default defineType({
 
-    name: 'policies',
-    title: 'Policies',
+    name: 'article',
+    title: 'Article',
     type: 'document',
     fields: [
         defineField({
@@ -18,12 +18,6 @@ export default defineType({
             type: 'slug',
             options: { source: 'title', maxLength: 96, }
         }),
-        defineField({
-            name: 'author',
-            title: 'Author',
-            type: 'reference',
-            to: {type: 'author'},
-          }),
         defineField({
             name: 'body',
             title: 'Body',
